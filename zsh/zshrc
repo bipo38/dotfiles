@@ -1,0 +1,56 @@
+# ZSH Home
+export ZSH="$HOME/.zsh"
+
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/bipo/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+#plugins
+# ZSH plugins
+source $ZSH/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $ZSH/plugins/zsh-completions/zsh-completions.plugin.zsh
+ 
+export virg="~"
+
+
+#Config alias 
+alias kittyc="nvim $virg/.config/kitty/kitty.conf"
+alias zshc="nvim $virg/.zshrc && source $virg/.zshrc"
+alias hyprc="nvim $virg/.config/hypr/hyprland.conf"
+
+
+#Other alias
+alias ewws="$virg/git/eww/target/release/eww"
+alias neo="neofetch --image_size 250 --kitty $virg/.config/neofetch/img/term.jpg"
+alias gg="cd $virg/git"
+
+#Functions
+func checkgc () {
+	echo "$1"| commitlint --verbose
+}
+
+
+eval "$(starship init zsh)"
+
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+
+neo
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
