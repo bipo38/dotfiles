@@ -1,0 +1,54 @@
+window {
+margin: 0px;
+border: 1px solid #ffd249;
+background-color: #3a3a3a;
+border-radius: 5px;
+
+}
+
+#input {
+margin: 5px;
+border: 2px solid #ffd249;
+color: #ffd249;
+font-weight: bold;
+background-color: #3a3a3a;
+}
+
+#inner-box {
+margin: 5px;
+border: none;
+background-color: #3a3a3a;
+}
+
+#outer-box {
+margin: 5px;
+border: none;
+background-color: #3a3a3a ;
+}
+
+#scroll {
+margin: 0px;
+border: none;
+}
+
+#text {
+margin: 5px;
+border: none;
+color: #f8f8f2;
+} 
+
+#entry.activatable #text {
+color: #282a36;
+}
+
+#entry > * {
+color: #f8f8f2;
+}
+
+#entry:selected {
+background-color: #3a3a3a;
+}
+
+#entry:selected #text {
+font-weight: bold;
+}
