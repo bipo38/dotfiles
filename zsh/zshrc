@@ -28,11 +28,11 @@ alias kittyc="nvim $virg/.config/kitty/kitty.conf"
 alias zshc="nvim $virg/.zshrc && source $virg/.zshrc"
 alias hyprc="nvim $virg/.config/hypr/hyprland.conf"
 
-
 #Other alias
 alias ewws="$virg/git/eww/target/release/eww"
 alias neo="neofetch --image_size 250 --kitty $virg/.config/neofetch/img/term.jpg"
 alias gg="cd $virg/git"
+alias virg="echo $virg"
 
 #Functions
 func checkgc () {
@@ -42,8 +42,7 @@ func checkgc () {
 
 eval "$(starship init zsh)"
 
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519
+
 
 neo
 
