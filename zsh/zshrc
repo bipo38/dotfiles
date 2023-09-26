@@ -31,8 +31,11 @@ alias hyprc="nvim $virg/.config/hypr/hyprland.conf"
 #Other alias
 alias ewws="$virg/git/eww/target/release/eww"
 alias neo="neofetch --image_size 250 --kitty $virg/.config/neofetch/img/term.jpg"
-alias gg="cd $virg/git"
 alias virg="echo $virg"
+
+#Git alias
+alias gs="git status"
+alias gg"cd $virg/git"
 
 #Functions
 func checkgc () {
