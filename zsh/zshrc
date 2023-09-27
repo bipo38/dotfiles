@@ -37,6 +37,7 @@ alias dot="cd $virg/git/dotfiles"
 #Git alias
 alias gs="git status"
 alias gg="cd $virg/git"
+alias gco="git checkout"
 
 #Functions
 func checkgc () {
