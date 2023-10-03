@@ -59,4 +59,5 @@ return {
 	},
 
 
+	{ 'voldikss/vim-floaterm' },
 }

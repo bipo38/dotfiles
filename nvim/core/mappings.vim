@@ -11,6 +11,10 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 " JABS
 nmap <leader>b <cmd>JABS<cr>
 
-"Nerd Tree
-
+"  Nerd Tree
 nmap B <cmd>Neotree<cr>
+
+"   Floaterm
+cnoreabbrev term :FloatermNew<CR>
+tnoremap <Esc> <C-\><C-n>
+nmap º :FloatermToggle<CR>
