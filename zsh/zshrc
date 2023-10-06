@@ -20,24 +20,22 @@ source $ZSH/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZSH/plugins/zsh-completions/zsh-completions.plugin.zsh
  
-export virg="~"
 
 
 #Config alias 
-alias kittyc="nvim $virg/.config/kitty/kitty.conf"
-alias zshc="nvim $virg/.zshrc && source $virg/.zshrc"
-alias hyprc="nvim $virg/.config/hypr/hyprland.conf"
+alias kittyc="nvim $HOME/.config/kitty/kitty.conf"
+alias zshc="nvim $HOME/.zshrc && source $virg/.zshrc"
+alias hyprc="nvim $HOME/.config/hypr/hyprland.conf"
 
 #Other alias
-alias ewws="$virg/git/eww/target/release/eww"
+alias ewws="$HOME/git/eww/target/release/eww"
 alias neo="neofetch --image_size 250 --kitty $virg/.config/neofetch/img/term.jpg"
-alias virg="echo $virg"
-alias dot="cd $virg/git/dotfiles"
+alias dot="cd $HOME/git/dotfiles"
 alias pdf="zathura"
 
 #Git alias
 alias gs="git status"
-alias gg="cd $virg/git"
+alias gg="cd $HOME/git"
 alias gco="git checkout"
 
 
