@@ -15,6 +15,8 @@ let g:coc_global_extensions = [
 	\'coc-rust-analyzer',
 	\'coc-go',
 	\'coc-sumneko-lua',
+        \'coc-markdownlint',
+        \'coc-prettier',
 	\]
 
 "   Treesitter
