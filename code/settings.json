@@ -1,0 +1,22 @@
+{
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "workbench.sideBar.location": "right",
+  "editor.fontFamily": "'Martian Mono'",
+  "editor.cursorWidth": 3,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "telemetry.telemetryLevel": "off",
+  "editor.guides.bracketPairs": true,
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.accessibilitySupport": "off",
+  "editor.minimap.enabled": false,
+  "editor.cursorBlinking": "solid",
+  "workbench.iconTheme": "icons",
+  "workbench.editor.languageDetection": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.fontWeight": "normal",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
+}
