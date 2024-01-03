@@ -20,7 +20,7 @@ source $ZSH/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZSH/plugins/zsh-completions/zsh-completions.plugin.zsh
  
-
+export PATH="/home/bipo/.local/bin:$PATH"
 
 #Config alias 
 alias kittyc="nvim $HOME/.config/kitty/kitty.conf"
@@ -37,7 +37,7 @@ alias pdf="zathura"
 alias gs="git status"
 alias gg="cd $HOME/git"
 alias gco="git checkout"
-
+alias gm="git commit -m"
 
 #Functions
 func checkgc () {
@@ -70,3 +70,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+
+# pnpm
+export PNPM_HOME="/home/bipo/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+
+# pnpm end

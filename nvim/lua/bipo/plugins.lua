@@ -60,4 +60,7 @@ return {
 
 
 	{ 'voldikss/vim-floaterm' },
+	{
+		"lervag/vimtex",
+	},
 }
