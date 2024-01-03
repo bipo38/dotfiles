@@ -38,6 +38,7 @@ alias gs="git status"
 alias gg="cd $HOME/git"
 alias gco="git checkout"
 alias gm="git commit -m"
+alias gp="git push"
 
 #Functions
 func checkgc () {
@@ -77,5 +78,6 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
+
 
 # pnpm end
